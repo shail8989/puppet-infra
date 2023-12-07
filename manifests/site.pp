@@ -1,7 +1,7 @@
 node default {
   file { '/root/README':
     ensure => file,
-    content => '$fqdn',
+    content => "Welcome to the ${fqdn}\n",
    }
  }
  node 'master.puppet.vm' {
