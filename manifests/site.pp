@@ -1,8 +1,7 @@
 node default {
   file { '/root/README':
     ensure => file,
-    content => 'this is readme',
-    owner => 'root',
+    content => '$fqdn',
    }
  }
  node 'master.puppet.vm' {
